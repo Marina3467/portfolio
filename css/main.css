@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;/* внешние отступы*/
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+.container {
+    max-width: 1100px; /* максимально допустимая ширина */
+    margin-left: auto; /* отступ слева */
+    margin-right: auto; /* отступ справа */
+}
+
+.header {
+    position: relative;
+    /* родитель для эл-тов, у которых есть position: absolute; */
+    /* Определяем модель flex-box для блока .header*/
+    display: flex; /* все элементы выстраиваются в ряд*/
+    flex-direction: column; /* эл-ты выстраиваются в колонку*/
+    justify-content: center; /* выравнивание по вышестоящему стилю*/
+    align-items: center; /* выравнивание по поперечной */
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #556983;
+    background-image: url("./../images/header/background.jpg");
+
+}
+
+.header-title {
+    margin: 0;
+    margin-bottom: 25px; /* отступ вниз */
+    font-weight: bold; /* толщина шрифта */
+    font-size: 56px; /* размер шрифта */
+    line-height: 130%; /* высота строки */
+    text-align: center; /* выравнивание текста по центру */
+    color: #FFFFFF; /* цвет текста  */
+}
+
+.header-subtitle {
+    margin: 0;
+    font-weight: bold; /* толщина шрифта */
+    font-size: 16px; /* размер шрифта */
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.2em; /* пробел между буквами */
+    text-transform: uppercase; /* заглавные буквы */
+    color: #FFFFFF;
+}
+.header-arrow {
+    width: 48px;
+    height: 48px;
+
+    position: absolute;
+    bottom: 30px; /* элемент находится внизу */
+    left: 50%; /* отступил слева на 50%  */
+    transform: translate(-50%, 0);
+}
+
+/* Перешли к portfolio */
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+
+.portfolio-header {
+    margin: 0;
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: #000;
+}
+
+.portfolio-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Перенос карточек на следующую строчку */
+    justify-content: space-between; 
+
+} 
+
+.card {
+    margin-bottom: 30px;
+    padding: 20px; /* отступ со всех сторон по 20 px */
+    background-color: #fff;
+    max-width: 540px;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35); /* Задаем тень */
+}
+
+.card:last-child, .card:nth-last-child(2) { /* Выбирает предпоследний и последний элементы  */
+    margin-bottom: 0;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-link:hover {
+    color: rgb(39, 91, 236);
+}
+
+.card-image {
+    margin-bottom: 20px; /* отступ от картинки до заголовка */
+}
+
+.card-title {
+    margin: 0;
+    margin-bottom: 13px; /* отступ вниз */
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 130%;
+    color: #000;
+    margin: 0;
+}
+/* footer */
+.footer {
+    background: #1E4776;
+    padding-top: 45px;
+    padding-bottom: 130px;
+    color: white;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* выравнивание эл-ов */
+
+}
+
+.footer-copyright {
+    flex-grow: 1;
+    max-width: 350px;
+    color: #7E9EC9;
+    line-height: 1.3;
+}
+
+.footer-copyright-name {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-icons {
+    flex-grow: 1;
+    min-width: 350px;
+}
+
+.footer-icons p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3%;
+}
+
+.footer-icons-row {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icons-row > * + * {
+    /* Выбирает элементы на первом уровне вложенности
+    + соседний элемент */
+    margin-left: 30px;
+}
+
+.footer-contacts {
+    min-width: 350px;
+    flex-grow: 1;
+}
+
+.footer-button {
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+
+    border: 3px solid #FFFF;
+    border-radius: 50px;
+
+    color: white;
+    line-height: 44px;
+    /* Работаем с текстом */
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-contacts p {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #7E9EC9;
+}
+
+/* Project */
+.project {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.container {
+
+}
+
+.project-header {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 1.3;
+}
+
+.project-image {
+    margin-bottom: 70px;
+}
+
+.project-description {
+    margin: 0 auto 60px;
+    min-width: 730px;
+}
+
+.project-description p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.project-btn-back {
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+
+    border: 3px solid #275BEC;
+    border-radius: 50px;
+    color: white;
+    line-height: 54px;
+
+    /* Работаем с текстом */
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #275BEC;
+}
