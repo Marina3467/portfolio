@@ -4,74 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;600;700&family=Tinos:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <h1 class="header-title">Юрий Ключевский</h1>
       <p class="header-subtitle">фрилансер, веб-разработчик, создание сайтов</p>
       <!-- header-subtitle - подзаголовок -->
-      <div class="header-arrow">
+      <a href="#portfolio" class="header-arrow">
         <!-- иконка -->
         <img src="./images/header/chevron-down.svg" alt="arrow-down" />
-      </div>
+      </a>
     </header>
-    <div class="portfolio">
-      <div class="container">
-        <h2 class="portfolio-header">Портфолио</h2>
-        <!-- Оборачивает карточки в один контент -->
-        <!-- portfolio-card-wrapper  -->
-        <div class="portfolio-cards-wrapper">
-          <!-- Карточки -->
-          <div class="card">
-            <a href="forest-travel.html" class="card-link">
-            <img
-              class="card-image"
-              src="./images/portfolio/forest.jpg"
-              alt="Многостраничный сайт"
-            />
-            <h3 class="card-title">Многостраничный сайт</h3>
-            <p>Верстка многостраничного сайта.</p>
-            </a>
-          </div>
+    <main>
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="portfolio-header">Портфолио</h2>
+          <!-- Оборачивает карточки в один контент -->
+          <!-- portfolio-card-wrapper  -->
+          <div class="portfolio-cards-wrapper">
+            <!-- Карточки -->
+            <div class="card">
+              <a href="forest-travel.html" class="card-link">
+                <img
+                  class="card-image"
+                  src="./images/portfolio/forest.jpg"
+                  alt="Многостраничный сайт"
+                />
+                <h3 class="card-title">Многостраничный сайт</h3>
+                <p>Верстка многостраничного сайта.</p>
+              </a>
+            </div>
 
-          <div class="card">
-            <img
-              class="card-image"
-              src="./images/portfolio/unit.jpg"
-              alt="Многостраничный сайт"
-            />
-            <h3 class="card-title">Адаптивный лендинг</h3>
-            <p>Верстка многостраничного сайта.</p>
-          </div>
+            <div class="card">
+              <img
+                class="card-image"
+                src="./images/portfolio/unit.jpg"
+                alt="Многостраничный сайт"
+              />
+              <h3 class="card-title">Адаптивный лендинг</h3>
+              <p>Верстка многостраничного сайта.</p>
+            </div>
 
-          <div class="card">
-            <img
-              class="card-image"
-              src="./images/portfolio/portfolio.jpg"
-              alt="Многостраничный сайт"
-            />
-            <h3 class="card-title">Личный сайт</h3>
-            <p>Верстка многостраничного сайта.</p>
-          </div>
+            <div class="card">
+              <img
+                class="card-image"
+                src="./images/portfolio/portfolio.jpg"
+                alt="Многостраничный сайт"
+              />
+              <h3 class="card-title">Личный сайт</h3>
+              <p>Верстка многостраничного сайта.</p>
+            </div>
 
-          <div class="card">
-            <img
-              class="card-image"
-              src="./images/portfolio/quantum.jpg"
-              alt="Многостраничный сайт"
-            />
-            <h3 class="card-title">Интернет-магазин</h3>
-            <p>Верстка многостраничного сайта.</p>
+            <div class="card">
+              <img
+                class="card-image"
+                src="./images/portfolio/quantum.jpg"
+                alt="Многостраничный сайт"
+              />
+              <h3 class="card-title">Интернет-магазин</h3>
+              <p>Верстка многостраничного сайта.</p>
+            </div>
+            <!-- Конец карточки -->
           </div>
-          <!-- Конец карточки -->
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     <!-- Пишем footer -->
     <footer class="footer">
       <div class="container">
@@ -111,5 +113,12 @@
         </div>
       </div>
     </footer>
+
+    <!-- Библиотеки и плагины -->
+    <script src="./libs/jquerry/jquery-3.7.0.min.js"></script>
+    <script src="./libs/vide/jquery.vide.min.js"></script>
+
+    <!-- Собственые скрипты и вызовы библиотек -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
