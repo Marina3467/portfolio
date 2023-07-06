@@ -11,16 +11,18 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <h1 class="header-title">Юрий Ключевский</h1>
       <p class="header-subtitle">фрилансер, веб-разработчик, создание сайтов</p>
       <!-- header-subtitle - подзаголовок -->
-      <div class="header-arrow">
+      <a href="#portfolio" class="header-arrow">
         <!-- иконка -->
         <img src="./images/header/chevron-down.svg" alt="arrow-down" />
-      </div>
+      </a>
     </header>
-    <div class="portfolio">
+
+    <main>
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="portfolio-header">Портфолио</h2>
         <!-- Оборачивает карточки в один контент -->
@@ -71,7 +73,8 @@
           <!-- Конец карточки -->
         </div>
       </div>
-    </div>
+    </section>
+    </main>
     <!-- Пишем footer -->
     <footer class="footer">
       <div class="container">
@@ -81,7 +84,7 @@
             <p>HTML верстка и разработка сайтов</p>
           </div>
           <!-- Вставляем иконки -->
-          <div class="footer-icons">
+          <div class="footer-icons ">
             <p>Мои профили в социальных сетях:</p>
             <div class="footer-icons-row">
               <a href="#">
@@ -111,5 +114,12 @@
         </div>
       </div>
     </footer>
+
+    <!-- Библиотеки и плагины -->
+    <script src="./libs/jquery/jquery-3.7.0.min.js"></script>
+    <script src="./libs/vide/jquery.vide.min.js"></script>
+
+    <!-- Собственные скрипты и вызовы библиотек -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
